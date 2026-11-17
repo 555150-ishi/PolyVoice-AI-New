@@ -10,7 +10,7 @@ LANGUAGES = {
  "zh":"Chinese","ko":"Korean","nl":"Dutch","tr":"Turkish","bn":"Bengali",
  "id":"Indonesian","vi":"Vietnamese","th":"Thai","pl":"Polish","sv":"Swedish"
 }
-BASE = Path.home() / "AppData/Local/PolyVoiceAI"
+BASE = Path(os.environ.get("POLYVOICE_DATA", Path.home() / ".local/share/PolyVoiceAI"))
 VOICE = BASE / "vosk_models"
 MODELS = {
  "en":("vosk-model-small-en-us-0.15","https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip"),
