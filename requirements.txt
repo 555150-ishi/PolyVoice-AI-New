@@ -1,0 +1,6 @@
+Flask
+argostranslate
+vosk
+requests
+gunicorn
+imageio-ffmpeg
